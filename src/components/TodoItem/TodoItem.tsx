@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { Todo } from '../../types/Todo';
 
@@ -12,6 +13,7 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
       className={`todo${todo.completed ? ' completed' : ''}`}
       key={todo.id}
     >
+      {/* eslint-disable jsx-a11y/label-has-associated-control */}
       <label className="todo__status-label">
         <input
           data-cy="TodoStatus"
